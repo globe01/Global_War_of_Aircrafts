@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/scene">
+        <file>resources/2(1).jpg</file>
+        <file>resources/restart_nanie.PNG</file>
+        <file>resources/background.jpg</file>
+        <file>resources/ye.jpg</file>
+        <file>resources/ren(1)(1)(1).jpg</file>
+        <file>resources/bullet(1).jpg</file>
+        <file>resources/bullet.jpg</file>
+        <file>resources/bullet(1)(1).jpg</file>
+        <file>resources/sunxingzhe(1).jpg</file>
+    </qresource>
+</RCC>
