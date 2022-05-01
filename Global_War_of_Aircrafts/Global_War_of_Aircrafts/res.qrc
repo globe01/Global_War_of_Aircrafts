@@ -11,5 +11,15 @@
         <file>resources/sunxingzhe(1).jpg</file>
         <file>resources/ren(1)(1)(1).png</file>
         <file>resources/sunxingzhe(1).png</file>
+        <file>resources/bomb-1.png</file>
+        <file>resources/bomb-2.png</file>
+        <file>resources/bomb-3.png</file>
+        <file>resources/bomb-4.png</file>
+        <file>resources/bomb-5.png</file>
+        <file>resources/bomb-6.png</file>
+        <file>resources/bomb-7.png</file>
+        <file>resources/background(1).jpg</file>
+        <file>resources/guardian-1.png</file>
+        <file>resources/background2(1).jpg</file>
     </qresource>
 </RCC>

@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    bomb.cpp \
     bullet.cpp \
     heroguardians.cpp \
     main.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
     warmap.cpp
 
 HEADERS += \
+    bomb.h \
     bullet.h \
     config.h \
     heroguardians.h \

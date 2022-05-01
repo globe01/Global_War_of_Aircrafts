@@ -7,6 +7,7 @@
 #include"ufo_aircraft.h"
 #include"bullet.h"
 #include"heroguardians.h"
+#include"bomb.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }
@@ -58,6 +59,9 @@ public:
 
     //定时器
     QTimer m_Timer;
+
+    //爆炸数组
+    Bomb m_bombs[BOMB_NUM];
 
 
 

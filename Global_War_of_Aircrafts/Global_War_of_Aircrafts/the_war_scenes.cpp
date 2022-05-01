@@ -94,6 +94,13 @@ void The_War_Scenes::updateEveryPosition()
         }
     }
 
+    //爆炸播放计算
+    for(int i=0;i<BOMB_NUM;i++){
+        if(m_bombs[i].m_Free==false){
+            m_bombs[i].updateInfo();
+        }
+    }
+
 }
 
 void The_War_Scenes::paintEvent(QPaintEvent *)
@@ -120,6 +127,12 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
         }
     }
 
+    //绘制爆炸
+    for(int i=0;i<BOMB_NUM;i++){
+        if(m_bombs[i].m_Free==false){
+            painter.drawPixmap(m_bombs[i].m_X,m_bombs[i].m_Y,m_bombs[i].m_pixArr[m_bombs[i].m_index]);
+        }
+    }
 
 
 }
@@ -191,6 +204,18 @@ void The_War_Scenes::collisionDetection()
             if(m_guardians[i].m_Rect.intersects(m_UFO.m_bullets[j].m_Rect)){
                 m_guardians[i].m_Free=true;
                 m_UFO.m_bullets[j].m_Free=true;
+
+                //碰撞后爆炸
+                for(int k=0;k<BOMB_NUM;k++){
+                    if(m_bombs[k].m_Free){
+                        m_bombs[k].m_Free=false;
+                        m_bombs[k].m_X=m_guardians[i].m_X;
+                        m_bombs[k].m_Y=m_guardians[i].m_Y;
+                        break;
+
+                    }
+                }
+
             }
 
         }
