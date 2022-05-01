@@ -54,7 +54,9 @@ void The_War_Scenes::initScene()
 void The_War_Scenes::playgame()
 {
     //bgm
-    QSound::play(SOUND_BACKGROUND);
+    if(m_UFO.m_Free==false){
+        QSound::play(SOUND_BACKGROUND);
+    }
 
     //启动定时器
     m_Timer.start();
@@ -113,13 +115,24 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     //绘制地图
     painter.drawPixmap(m_warmap.m_map1_posX,0,m_warmap.m_map1);
     painter.drawPixmap(m_warmap.m_map2_posX,0,m_warmap.m_map2);
+    //如果飞行器炸毁，绘制游戏结束
+    if(m_UFO.m_Free==true){
+        painter.drawPixmap(m_warmap.m_map3_posX,0,m_warmap.m_map3);
+        //所有守护者变为空闲
+        for(int i=0;i<GUARDIAN_NUM;i++){
+            m_guardians[i].m_Free=true;
+        }
+
+    }
 
     //绘制飞行器
-    painter.drawPixmap(m_UFO.m_X,m_UFO.m_Y,m_UFO.m_aircraft);
+    if(m_UFO.m_Free==false){
+        painter.drawPixmap(m_UFO.m_X,m_UFO.m_Y,m_UFO.m_aircraft);
+    }
 
     //绘制子弹
     for(int i=0;i<BULLET_NUM;i++){
-        if(m_UFO.m_bullets[i].m_Free==false){
+        if(m_UFO.m_bullets[i].m_Free==false && m_UFO.m_Free==false){
             painter.drawPixmap(m_UFO.m_bullets[i].m_X,m_UFO.m_bullets[i].m_Y,m_UFO.m_bullets[i].m_Bullet);
         }
     }
@@ -130,6 +143,8 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
             painter.drawPixmap(m_guardians[i].m_X,m_guardians[i].m_Y,m_guardians[i].m_guardian);
         }
     }
+
+
 
     //绘制爆炸
     for(int i=0;i<BOMB_NUM;i++){
@@ -160,9 +175,6 @@ void The_War_Scenes::mouseMoveEvent(QMouseEvent *event)
     if(y>=GAME_HEIGHT-m_UFO.m_Rect.height()){
         y=GAME_HEIGHT-m_UFO.m_Rect.height();
     }
-
-
-
 
 
 
@@ -212,8 +224,8 @@ void The_War_Scenes::collisionDetection()
                 //碰撞后爆炸
                 for(int k=0;k<BOMB_NUM;k++){
                     if(m_bombs[k].m_Free){
-                        //播放音效
-                        QSound::play(SOUND_BOMB);
+                        //播放音效1
+                        QSound::play(SOUND_BOMB1);
 
                         m_bombs[k].m_Free=false;
 
@@ -223,6 +235,37 @@ void The_War_Scenes::collisionDetection()
                         break;
 
                     }
+                }
+
+            }
+
+            //如果UFO_aircrafts和guardian碰撞,UFO_aircrafts减一点防御
+            if(m_guardians[i].m_Rect.intersects(m_UFO.m_Rect)){
+                m_guardians[i].m_Free=true;
+                m_UFO.m_life=m_UFO.m_life-1;
+
+                //碰撞后播放爆炸2音效
+                for(int k=0;k<BOMB_NUM;k++){
+                    if(m_bombs[k].m_Free){
+                        //播放音效2
+                        QSound::play(SOUND_BOMB2);
+
+                        //播放GAMEOVER音效
+                        QSound::play(":/scene/resources/gameover.wav");
+
+                        m_bombs[k].m_Free=false;
+
+                        //坐标更新
+                        m_bombs[k].m_X=m_UFO.m_X;
+                        m_bombs[k].m_Y=m_UFO.m_Y;
+                        break;
+
+                    }
+                }
+
+                //判断如果防御值变为0，则UFO_Aircrafts消失
+                if(m_UFO.m_life<0){
+                    m_UFO.m_Free=true;
                 }
 
             }

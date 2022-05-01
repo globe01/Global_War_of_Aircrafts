@@ -16,10 +16,12 @@
         <file>resources/background(1).jpg</file>
         <file>resources/guardian-1.png</file>
         <file>resources/background2(1).jpg</file>
-        <file>resources/bomb.wav</file>
-        <file>resources/bgm.wav</file>
         <file>resources/bomb2.wav</file>
+        <file>resources/bgm1.wav</file>
+        <file>resources/bomb1.wav</file>
         <file>resources/bullet(1)(1).png</file>
         <file>resources/bgm2.wav</file>
+        <file>resources/guardian-2.png</file>
+        <file>resources/gameover.wav</file>
     </qresource>
 </RCC>

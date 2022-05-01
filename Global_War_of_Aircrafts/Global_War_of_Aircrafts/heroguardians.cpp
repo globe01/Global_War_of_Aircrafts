@@ -20,6 +20,10 @@ HeroGuardians::HeroGuardians()
     m_Rect.setWidth(m_guardian.width());
     m_Rect.setHeight(m_guardian.height());
     m_Rect.moveTo(m_X,m_Y);
+
+
+
+
 }
 
 void HeroGuardians::updatePosition()

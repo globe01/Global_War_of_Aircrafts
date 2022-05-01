@@ -32,6 +32,12 @@ public:
     //发射间隔
     int m_recorder;
 
+    //防御值
+    int m_life;
+
+    //空闲状态
+    bool m_Free;
+
 };
 
 #endif // UFO_AIRCRAFT_H

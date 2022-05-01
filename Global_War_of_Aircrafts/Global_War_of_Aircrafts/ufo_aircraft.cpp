@@ -16,6 +16,12 @@ UFO_aircraft::UFO_aircraft()
     m_Rect.setHeight(m_aircraft.height());
     m_Rect.moveTo(m_X,m_Y);
 
+    //防御值
+    m_life=UFO_LIFE;
+
+    //空闲状态
+    m_Free=false;
+
 }
 
 

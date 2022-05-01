@@ -9,8 +9,10 @@
 #define GAME_RATE 10 //定时器刷新时间间隔10ms
 
 //bgm
-#define SOUND_BACKGROUND ":/scene/resources/bgm2.wav"
-#define SOUND_BOMB ":/scene/resources/bomb2.wav"
+#define SOUND_BACKGROUND ":/scene/resources/bgm1.wav"
+#define SOUND_BOMB1 ":/scene/resources/bomb1.wav"
+#define SOUND_BOMB2 ":/scene/resources/bomb2.wav"
+
 
 //地图
 #define MAP_PATH ":/scene/resources/background2(1).jpg"   //背景
@@ -19,6 +21,7 @@
 
 //飞行器
 #define UFO_PATH ":/scene/resources/ren(1)(1)(1).png"
+#define UFO_LIFE 1  //1点防御值
 
 //子弹
 #define BULLET_PATH ":/scene/resources/bullet(1)(1).png"
@@ -31,6 +34,7 @@
 #define GUARDIAN_SPEED 3
 #define GUARDIAN_NUM 5     //总数
 #define GUARDIAN_INTERVAL 100    //时间间隔
+
 
 //爆炸
 #define BOMB_PATH ":/scene/resources/bomb-%1.png"

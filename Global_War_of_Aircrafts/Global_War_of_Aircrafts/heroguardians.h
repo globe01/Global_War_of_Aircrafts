@@ -27,6 +27,8 @@ public:
     //移速
     int m_Speed;
 
+
+
 };
 
 #endif // HEROGUARDIANS_H
