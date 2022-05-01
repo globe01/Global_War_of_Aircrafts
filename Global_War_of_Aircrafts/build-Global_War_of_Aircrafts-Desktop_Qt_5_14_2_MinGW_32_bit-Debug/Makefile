@@ -272,8 +272,10 @@ Makefile: ../Global_War_of_Aircrafts/Global_War_of_Aircrafts.pro ../../../qt/5.1
 		../../../qt/5.14.2/mingw73_32/mkspecs/features/yacc.prf \
 		../../../qt/5.14.2/mingw73_32/mkspecs/features/lex.prf \
 		../Global_War_of_Aircrafts/Global_War_of_Aircrafts.pro \
+		../../../qt/5.14.2/mingw73_32/lib/Qt5Multimedia.prl \
 		../../../qt/5.14.2/mingw73_32/lib/Qt5Widgets.prl \
 		../../../qt/5.14.2/mingw73_32/lib/Qt5Gui.prl \
+		../../../qt/5.14.2/mingw73_32/lib/Qt5Network.prl \
 		../../../qt/5.14.2/mingw73_32/lib/Qt5Core.prl \
 		../../../qt/5.14.2/mingw73_32/lib/qtmain.prl \
 		../../../qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf \
@@ -481,8 +483,10 @@ Makefile: ../Global_War_of_Aircrafts/Global_War_of_Aircrafts.pro ../../../qt/5.1
 ../../../qt/5.14.2/mingw73_32/mkspecs/features/yacc.prf:
 ../../../qt/5.14.2/mingw73_32/mkspecs/features/lex.prf:
 ../Global_War_of_Aircrafts/Global_War_of_Aircrafts.pro:
+../../../qt/5.14.2/mingw73_32/lib/Qt5Multimedia.prl:
 ../../../qt/5.14.2/mingw73_32/lib/Qt5Widgets.prl:
 ../../../qt/5.14.2/mingw73_32/lib/Qt5Gui.prl:
+../../../qt/5.14.2/mingw73_32/lib/Qt5Network.prl:
 ../../../qt/5.14.2/mingw73_32/lib/Qt5Core.prl:
 ../../../qt/5.14.2/mingw73_32/lib/qtmain.prl:
 ../../../qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf:

@@ -21,5 +21,8 @@
         <file>resources/background(1).jpg</file>
         <file>resources/guardian-1.png</file>
         <file>resources/background2(1).jpg</file>
+        <file>resources/bomb.wav</file>
+        <file>resources/bgm.wav</file>
+        <file>resources/bomb2.wav</file>
     </qresource>
 </RCC>

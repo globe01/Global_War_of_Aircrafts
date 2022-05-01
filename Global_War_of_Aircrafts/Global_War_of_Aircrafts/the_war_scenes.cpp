@@ -5,6 +5,7 @@
 #include<QPainter>
 #include<QMouseEvent>
 #include<ctime>
+#include<QSound>
 
 The_War_Scenes::The_War_Scenes(QWidget *parent)
     : QWidget(parent)
@@ -52,6 +53,9 @@ void The_War_Scenes::initScene()
 
 void The_War_Scenes::playgame()
 {
+    //bgm
+    QSound::play(SOUND_BACKGROUND);
+
     //启动定时器
     m_Timer.start();
 
@@ -208,7 +212,12 @@ void The_War_Scenes::collisionDetection()
                 //碰撞后爆炸
                 for(int k=0;k<BOMB_NUM;k++){
                     if(m_bombs[k].m_Free){
+                        //播放音效
+                        QSound::play(SOUND_BOMB);
+
                         m_bombs[k].m_Free=false;
+
+                        //坐标更新
                         m_bombs[k].m_X=m_guardians[i].m_X;
                         m_bombs[k].m_Y=m_guardians[i].m_Y;
                         break;

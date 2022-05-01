@@ -2,12 +2,15 @@
 #define CONFIG_H
 
 //游戏
-#define GAME_WIDTH  1195    //宽度
-#define GAME_HEIGHT  1055    //高度
+#define GAME_WIDTH  1648    //宽度
+#define GAME_HEIGHT  1027    //高度
 #define GAME_TITLE "Global War of Crafts 1.0"   //标题
 #define GAME_ICON ":/scene/resources/restart_nanie.PNG" //图标加载路径
 #define GAME_RATE 10 //定时器刷新时间间隔10ms
 
+//bgm
+#define SOUND_BACKGROUND ":/scene/resources/bgm.wav"
+#define SOUND_BOMB ":/scene/resources/bomb2.wav"
 
 //地图
 #define MAP_PATH ":/scene/resources/background2(1).jpg"   //背景
