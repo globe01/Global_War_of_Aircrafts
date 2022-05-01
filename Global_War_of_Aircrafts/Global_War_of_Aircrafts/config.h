@@ -15,7 +15,7 @@
 
 
 //飞行器
-#define UFO_PATH ":/scene/resources/ren(1)(1)(1).jpg"
+#define UFO_PATH ":/scene/resources/ren(1)(1)(1).png"
 
 //子弹
 #define BULLET_PATH ":/scene/resources/bullet(1)(1).jpg"
@@ -24,7 +24,7 @@
 #define BULLET_INTERVAL 20  //时间间隔
 
 //英雄守护者
-#define GUARDIAN_PATH ":/scene/resources/sunxingzhe(1).jpg"
+#define GUARDIAN_PATH ":/scene/resources/sunxingzhe(1).png"
 #define GUARDIAN_SPEED 3
 #define GUARDIAN_NUM 20     //总数
 #define GUARDIAN_INTERVAL 30    //时间间隔
