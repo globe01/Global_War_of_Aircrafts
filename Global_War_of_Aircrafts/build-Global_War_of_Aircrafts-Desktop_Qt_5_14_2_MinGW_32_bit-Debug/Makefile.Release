@@ -127,20 +127,17 @@ release/qrc_res.o: ../Global_War_of_Aircrafts/res.qrc \
 		../Global_War_of_Aircrafts/resources/sunxingzhe(1).png \
 		../Global_War_of_Aircrafts/resources/restart_nanie.PNG \
 		../Global_War_of_Aircrafts/resources/background(1).jpg \
-		../Global_War_of_Aircrafts/resources/ye.jpg \
-		../Global_War_of_Aircrafts/resources/bullet.jpg \
 		../Global_War_of_Aircrafts/resources/background2(1).jpg \
 		../Global_War_of_Aircrafts/resources/2(1).jpg \
 		../Global_War_of_Aircrafts/resources/bomb2.wav \
 		../Global_War_of_Aircrafts/resources/bomb.wav \
-		../Global_War_of_Aircrafts/resources/ren(1)(1)(1).jpg \
-		../Global_War_of_Aircrafts/resources/bullet(1).jpg \
 		../Global_War_of_Aircrafts/resources/bgm.wav \
 		../Global_War_of_Aircrafts/resources/ren(1)(1)(1).png \
-		../Global_War_of_Aircrafts/resources/bullet(1)(1).jpg \
-		../Global_War_of_Aircrafts/resources/bomb-1.png \
+		../Global_War_of_Aircrafts/resources/bgm2.wav \
 		../Global_War_of_Aircrafts/resources/guardian-1.png \
+		../Global_War_of_Aircrafts/resources/bomb-1.png \
 		../Global_War_of_Aircrafts/resources/bomb-2.png \
+		../Global_War_of_Aircrafts/resources/bullet(1)(1).png \
 		../Global_War_of_Aircrafts/resources/bomb-3.png \
 		../Global_War_of_Aircrafts/resources/sunxingzhe(1).jpg \
 		../Global_War_of_Aircrafts/resources/bomb-4.png \

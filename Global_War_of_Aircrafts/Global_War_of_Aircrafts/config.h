@@ -9,7 +9,7 @@
 #define GAME_RATE 10 //定时器刷新时间间隔10ms
 
 //bgm
-#define SOUND_BACKGROUND ":/scene/resources/bgm.wav"
+#define SOUND_BACKGROUND ":/scene/resources/bgm2.wav"
 #define SOUND_BOMB ":/scene/resources/bomb2.wav"
 
 //地图
@@ -21,7 +21,7 @@
 #define UFO_PATH ":/scene/resources/ren(1)(1)(1).png"
 
 //子弹
-#define BULLET_PATH ":/scene/resources/bullet(1)(1).jpg"
+#define BULLET_PATH ":/scene/resources/bullet(1)(1).png"
 #define BULLET_SPEED 5
 #define BULLET_NUM 50   //总数
 #define BULLET_INTERVAL 20  //时间间隔
