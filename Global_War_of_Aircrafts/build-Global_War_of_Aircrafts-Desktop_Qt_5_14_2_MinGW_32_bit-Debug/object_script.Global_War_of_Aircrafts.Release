@@ -1,0 +1,10 @@
+release/qrc_res.o
+release/bomb.o
+release/bullet.o
+release/fort.o
+release/heroguardians.o
+release/main.o
+release/the_war_scenes.o
+release/ufo_aircraft.o
+release/warmap.o
+release/moc_the_war_scenes.o

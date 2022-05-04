@@ -8,6 +8,7 @@
 #include"bullet.h"
 #include"heroguardians.h"
 #include"bomb.h"
+#include"fort.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }
@@ -56,6 +57,9 @@ public:
 
     //飞行器对象
     UFO_aircraft m_UFO;
+
+    //炮台对象
+    Fort m_fortspecific;
 
     //定时器
     QTimer m_Timer;

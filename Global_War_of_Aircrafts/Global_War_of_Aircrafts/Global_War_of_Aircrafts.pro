@@ -19,6 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     bomb.cpp \
     bullet.cpp \
+    fort.cpp \
     heroguardians.cpp \
     main.cpp \
     the_war_scenes.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     bomb.h \
     bullet.h \
     config.h \
+    fort.h \
     heroguardians.h \
     the_war_scenes.h \
     ufo_aircraft.h \

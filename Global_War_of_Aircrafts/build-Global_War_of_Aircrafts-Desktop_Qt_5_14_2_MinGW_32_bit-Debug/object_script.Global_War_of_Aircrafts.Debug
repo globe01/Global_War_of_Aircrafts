@@ -1,0 +1,10 @@
+debug/qrc_res.o
+debug/bomb.o
+debug/bullet.o
+debug/fort.o
+debug/heroguardians.o
+debug/main.o
+debug/the_war_scenes.o
+debug/ufo_aircraft.o
+debug/warmap.o
+debug/moc_the_war_scenes.o

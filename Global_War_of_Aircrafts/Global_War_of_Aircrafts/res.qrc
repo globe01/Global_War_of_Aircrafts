@@ -23,5 +23,6 @@
         <file>resources/bgm2.wav</file>
         <file>resources/guardian-2.png</file>
         <file>resources/gameover.wav</file>
+        <file>resources/Fort(1)(1).png</file>
     </qresource>
 </RCC>

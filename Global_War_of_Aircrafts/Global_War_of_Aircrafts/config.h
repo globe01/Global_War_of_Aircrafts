@@ -23,6 +23,10 @@
 #define UFO_PATH ":/scene/resources/ren(1)(1)(1).png"
 #define UFO_LIFE 1  //1点防御值
 
+//炮台
+#define FORT_PATH ":/scene/resources/Fort(1)(1).png"
+
+
 //子弹
 #define BULLET_PATH ":/scene/resources/bullet(1)(1).png"
 #define BULLET_SPEED 5
@@ -32,7 +36,7 @@
 //英雄守护者1
 #define GUARDIAN_PATH ":/scene/resources/guardian-1.png"
 #define GUARDIAN_SPEED 3
-#define GUARDIAN_NUM 5     //总数
+#define GUARDIAN_NUM 10     //总数
 #define GUARDIAN_INTERVAL 100    //时间间隔
 
 

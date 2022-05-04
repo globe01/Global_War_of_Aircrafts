@@ -18,9 +18,6 @@ The_War_Scenes::The_War_Scenes(QWidget *parent)
     //启动游戏
     playgame();
 
-
-
-
 }
 
 The_War_Scenes::~The_War_Scenes()
@@ -85,12 +82,14 @@ void The_War_Scenes::updateEveryPosition()
     //发射子弹
     m_UFO.shoot();
 
+
     //计算所有发出子弹的坐标
     for(int i=0;i<BULLET_NUM;i++){
         if(m_UFO.m_bullets[i].m_Free==false){
             m_UFO.m_bullets[i].updatePosition();
         }
     }
+
 
 
     //英雄守护者出场
@@ -136,6 +135,10 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
             painter.drawPixmap(m_UFO.m_bullets[i].m_X,m_UFO.m_bullets[i].m_Y,m_UFO.m_bullets[i].m_Bullet);
         }
     }
+
+    //绘制炮台
+    painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);
+
 
     //绘制英雄守护者
     for(int i=0;i<GUARDIAN_NUM;i++){
