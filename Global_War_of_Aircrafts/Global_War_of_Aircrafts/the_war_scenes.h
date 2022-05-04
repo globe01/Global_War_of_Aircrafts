@@ -9,6 +9,7 @@
 #include"heroguardians.h"
 #include"bomb.h"
 #include"fort.h"
+#include"fort_reverse.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }
@@ -60,6 +61,9 @@ public:
 
     //炮台对象
     Fort m_fortspecific;
+
+    //炮台对象（反）
+    fort_reverse m_fortreversespecific;
 
     //定时器
     QTimer m_Timer;

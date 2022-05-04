@@ -2,6 +2,7 @@ debug/qrc_res.o
 debug/bomb.o
 debug/bullet.o
 debug/fort.o
+debug/fort_reverse.o
 debug/heroguardians.o
 debug/main.o
 debug/the_war_scenes.o

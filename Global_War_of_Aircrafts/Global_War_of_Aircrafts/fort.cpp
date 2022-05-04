@@ -16,6 +16,14 @@ Fort::Fort()
     m_Rect.setHeight(m_fort.height());
     m_Rect.moveTo(m_X,m_Y);
 
+    //空闲状态
+    m_Free=false;
+
+}
+
+void Fort::shoot()
+{
+
 }
 
 

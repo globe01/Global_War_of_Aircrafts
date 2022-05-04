@@ -139,6 +139,8 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     //绘制炮台
     painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);
 
+    //绘制炮台
+    painter.drawPixmap(m_fortreversespecific.m_X,m_fortreversespecific.m_Y,m_fortreversespecific.m_fort_reverse);
 
     //绘制英雄守护者
     for(int i=0;i<GUARDIAN_NUM;i++){
@@ -239,6 +241,7 @@ void The_War_Scenes::collisionDetection()
 
                     }
                 }
+
 
             }
 

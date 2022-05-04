@@ -20,6 +20,7 @@ SOURCES += \
     bomb.cpp \
     bullet.cpp \
     fort.cpp \
+    fort_reverse.cpp \
     heroguardians.cpp \
     main.cpp \
     the_war_scenes.cpp \
@@ -31,6 +32,7 @@ HEADERS += \
     bullet.h \
     config.h \
     fort.h \
+    fort_reverse.h \
     heroguardians.h \
     the_war_scenes.h \
     ufo_aircraft.h \

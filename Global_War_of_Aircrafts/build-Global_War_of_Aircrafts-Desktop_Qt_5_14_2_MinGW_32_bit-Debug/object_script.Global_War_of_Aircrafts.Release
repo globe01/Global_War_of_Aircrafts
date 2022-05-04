@@ -2,6 +2,7 @@ release/qrc_res.o
 release/bomb.o
 release/bullet.o
 release/fort.o
+release/fort_reverse.o
 release/heroguardians.o
 release/main.o
 release/the_war_scenes.o

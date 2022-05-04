@@ -22,8 +22,6 @@ HeroGuardians::HeroGuardians()
     m_Rect.moveTo(m_X,m_Y);
 
 
-
-
 }
 
 void HeroGuardians::updatePosition()

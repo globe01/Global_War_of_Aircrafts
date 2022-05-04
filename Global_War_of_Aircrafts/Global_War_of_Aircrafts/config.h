@@ -4,7 +4,7 @@
 //游戏
 #define GAME_WIDTH  1648    //宽度
 #define GAME_HEIGHT  1027    //高度
-#define GAME_TITLE "Global War of Crafts 1.0"   //标题
+#define GAME_TITLE "Global War of Crafts"   //标题
 #define GAME_ICON ":/scene/resources/restart_nanie.PNG" //图标加载路径
 #define GAME_RATE 10 //定时器刷新时间间隔10ms
 
@@ -23,8 +23,11 @@
 #define UFO_PATH ":/scene/resources/ren(1)(1)(1).png"
 #define UFO_LIFE 1  //1点防御值
 
-//炮台
+//炮台            （下）
 #define FORT_PATH ":/scene/resources/Fort(1)(1).png"
+
+//炮台（反）       （上）
+#define FORTREVERSE_PATH ":/scene/resources/Fort(1)(1)(1).png"
 
 
 //子弹
