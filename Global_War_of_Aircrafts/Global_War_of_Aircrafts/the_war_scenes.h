@@ -10,6 +10,7 @@
 #include"bomb.h"
 #include"fort.h"
 #include"fort_reverse.h"
+#include"laser.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }

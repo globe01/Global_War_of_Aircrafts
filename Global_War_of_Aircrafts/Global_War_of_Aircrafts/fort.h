@@ -2,6 +2,7 @@
 #define FORT_H
 #include<QPixmap>
 #include<QRect>
+#include"laser.h"
 
 class Fort
 {
@@ -22,6 +23,9 @@ public:
 
     //包围炮台外部的矩形边框
     QRect m_Rect;
+
+    //激光对象
+    Laser m_laser_specific;
 
     //空闲状态
     bool m_Free;

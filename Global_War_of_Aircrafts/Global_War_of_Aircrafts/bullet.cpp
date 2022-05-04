@@ -7,7 +7,7 @@ Bullet::Bullet()
 
     //子弹坐标
     m_X=GAME_WIDTH;
-    m_X=GAME_HEIGHT*0.5-m_Bullet.height()*0.5;
+    m_Y=GAME_HEIGHT*0.5-m_Bullet.height()*0.5;
 
     //子弹状态
     m_Free= true;//默认闲置

@@ -4,6 +4,7 @@ release/bullet.o
 release/fort.o
 release/fort_reverse.o
 release/heroguardians.o
+release/laser.o
 release/main.o
 release/the_war_scenes.o
 release/ufo_aircraft.o

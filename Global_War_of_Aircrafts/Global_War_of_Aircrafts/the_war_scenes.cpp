@@ -82,6 +82,9 @@ void The_War_Scenes::updateEveryPosition()
     //发射子弹
     m_UFO.shoot();
 
+    //发射激光
+    m_fortspecific.shoot();
+
 
     //计算所有发出子弹的坐标
     for(int i=0;i<BULLET_NUM;i++){
@@ -135,6 +138,11 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
             painter.drawPixmap(m_UFO.m_bullets[i].m_X,m_UFO.m_bullets[i].m_Y,m_UFO.m_bullets[i].m_Bullet);
         }
     }
+
+    //绘制激光
+    painter.drawPixmap(m_fortspecific.m_laser_specific.m_X,m_fortspecific.m_laser_specific.m_Y,m_fortspecific.m_laser_specific.m_Laser);
+
+
 
     //绘制炮台
     painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);

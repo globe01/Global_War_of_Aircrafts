@@ -29,6 +29,9 @@
 //炮台（反）       （上）
 #define FORTREVERSE_PATH ":/scene/resources/Fort(1)(1)(1).png"
 
+//激光
+#define LASER_PATH ":/scene/resources/Laser(1).png"
+#define LASER_SPEED 10
 
 //子弹
 #define BULLET_PATH ":/scene/resources/bullet(1)(1).png"

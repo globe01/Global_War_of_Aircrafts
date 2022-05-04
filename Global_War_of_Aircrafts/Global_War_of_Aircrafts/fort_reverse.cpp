@@ -19,7 +19,3 @@ fort_reverse::fort_reverse()
     m_Free=false;
 }
 
-void fort_reverse::shoot()
-{
-
-}

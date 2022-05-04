@@ -1,6 +1,6 @@
 #include "fort.h"
 #include "config.h"
-
+#include"laser.h"
 
 Fort::Fort()
 {
@@ -23,6 +23,9 @@ Fort::Fort()
 
 void Fort::shoot()
 {
+
+   //发射
+   m_laser_specific.updatePosition();
 
 }
 

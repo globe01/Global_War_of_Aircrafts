@@ -22,6 +22,7 @@ SOURCES += \
     fort.cpp \
     fort_reverse.cpp \
     heroguardians.cpp \
+    laser.cpp \
     main.cpp \
     the_war_scenes.cpp \
     ufo_aircraft.cpp \
@@ -34,6 +35,7 @@ HEADERS += \
     fort.h \
     fort_reverse.h \
     heroguardians.h \
+    laser.h \
     the_war_scenes.h \
     ufo_aircraft.h \
     warmap.h

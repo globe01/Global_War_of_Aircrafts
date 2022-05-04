@@ -4,6 +4,7 @@ debug/bullet.o
 debug/fort.o
 debug/fort_reverse.o
 debug/heroguardians.o
+debug/laser.o
 debug/main.o
 debug/the_war_scenes.o
 debug/ufo_aircraft.o

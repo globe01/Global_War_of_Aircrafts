@@ -25,5 +25,6 @@
         <file>resources/gameover.wav</file>
         <file>resources/Fort(1)(1).png</file>
         <file>resources/Fort(1)(1)(1).png</file>
+        <file>resources/Laser(1).png</file>
     </qresource>
 </RCC>
