@@ -4,6 +4,7 @@ release/bullet.o
 release/fort.o
 release/fort_reverse.o
 release/golden_ball.o
+release/golden_ball_reverse.o
 release/gundam.o
 release/gundam_reverse.o
 release/heroguardians.o

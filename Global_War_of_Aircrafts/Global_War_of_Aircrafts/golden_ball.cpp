@@ -14,8 +14,8 @@ Golden_ball::Golden_ball()
 
 
     //金球移速
-    m_SpeedX=GOLDEN_SPEEDX;
-    m_SpeedY=GOLDEN_SPEEDY;
+    m_SpeedX=GOLDEN_SPEEDX+5;
+    m_SpeedY=GOLDEN_SPEEDY+5;
 
     //金球边框
     m_Rect.setWidth(m_goldenball.width());

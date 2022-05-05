@@ -87,6 +87,7 @@ void The_War_Scenes::updateEveryPosition()
 
     //发射金球
     m_gundamspecific.shoot();
+    m_gundam_reversespecific.shoot();
 
 
     //计算所有发出子弹的坐标
@@ -151,6 +152,10 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     if(m_gundamspecific.m_goldenball_specific.m_Free==false){
         painter.drawPixmap(m_gundamspecific.m_goldenball_specific.m_X,m_gundamspecific.m_goldenball_specific.m_Y,m_gundamspecific.m_goldenball_specific.m_goldenball);
     }
+    if(m_gundam_reversespecific.m_goldenballreverse_specific.m_Free==false){
+        painter.drawPixmap(m_gundam_reversespecific.m_goldenballreverse_specific.m_X,m_gundam_reversespecific.m_goldenballreverse_specific.m_Y,m_gundam_reversespecific.m_goldenballreverse_specific.m_goldenballreverse);
+    }
+
 
 
     //绘制炮台

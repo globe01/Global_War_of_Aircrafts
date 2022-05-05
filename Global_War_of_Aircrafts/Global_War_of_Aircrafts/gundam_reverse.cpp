@@ -18,3 +18,14 @@ Gundam_reverse::Gundam_reverse()
     //空闲状态
     m_Free=false;
 }
+
+void Gundam_reverse::shoot()
+{
+    if(m_Free==true){
+        return;
+    }
+    else{
+        //发射
+        m_goldenballreverse_specific.updatePosition();
+    }
+}

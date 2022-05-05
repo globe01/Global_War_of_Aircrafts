@@ -22,6 +22,7 @@ SOURCES += \
     fort.cpp \
     fort_reverse.cpp \
     golden_ball.cpp \
+    golden_ball_reverse.cpp \
     gundam.cpp \
     gundam_reverse.cpp \
     heroguardians.cpp \
@@ -38,6 +39,7 @@ HEADERS += \
     fort.h \
     fort_reverse.h \
     golden_ball.h \
+    golden_ball_reverse.h \
     gundam.h \
     gundam_reverse.h \
     heroguardians.h \

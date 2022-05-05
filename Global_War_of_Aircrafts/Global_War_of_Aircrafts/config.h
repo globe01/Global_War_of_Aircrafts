@@ -42,7 +42,7 @@
 
 //光球
 #define GOLDEN_PATH ":/scene/resources/goldenBall(1).png"
-#define GOLDEN_SPEEDX 32
+#define GOLDEN_SPEEDX 20
 #define GOLDEN_SPEEDY 10
 
 //子弹
