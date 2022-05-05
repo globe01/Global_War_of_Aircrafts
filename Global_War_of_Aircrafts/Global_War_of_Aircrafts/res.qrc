@@ -26,5 +26,8 @@
         <file>resources/Fort(1)(1).png</file>
         <file>resources/Fort(1)(1)(1).png</file>
         <file>resources/Laser(1).png</file>
+        <file>resources/Gundam(1)(1).png</file>
+        <file>resources/Gundam(1).png</file>
+        <file>resources/goldenBall(1).png</file>
     </qresource>
 </RCC>

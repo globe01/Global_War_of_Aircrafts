@@ -3,8 +3,6 @@
 #include<QPixmap>
 #include<QRect>
 
-
-
 class fort_reverse
 {
 public:

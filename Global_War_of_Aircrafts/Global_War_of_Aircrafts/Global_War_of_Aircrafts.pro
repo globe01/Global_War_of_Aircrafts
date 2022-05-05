@@ -21,6 +21,9 @@ SOURCES += \
     bullet.cpp \
     fort.cpp \
     fort_reverse.cpp \
+    golden_ball.cpp \
+    gundam.cpp \
+    gundam_reverse.cpp \
     heroguardians.cpp \
     laser.cpp \
     main.cpp \
@@ -34,6 +37,9 @@ HEADERS += \
     config.h \
     fort.h \
     fort_reverse.h \
+    golden_ball.h \
+    gundam.h \
+    gundam_reverse.h \
     heroguardians.h \
     laser.h \
     the_war_scenes.h \

@@ -28,7 +28,6 @@ public:
     Laser m_laser_specific;
 
 
-
     //空闲状态
     bool m_Free;
 

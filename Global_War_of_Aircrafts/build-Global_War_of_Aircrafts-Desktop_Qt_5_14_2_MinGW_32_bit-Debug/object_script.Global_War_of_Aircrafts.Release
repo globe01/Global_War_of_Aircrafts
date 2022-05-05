@@ -3,6 +3,9 @@ release/bomb.o
 release/bullet.o
 release/fort.o
 release/fort_reverse.o
+release/golden_ball.o
+release/gundam.o
+release/gundam_reverse.o
 release/heroguardians.o
 release/laser.o
 release/main.o

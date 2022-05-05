@@ -85,6 +85,9 @@ void The_War_Scenes::updateEveryPosition()
     //发射激光
     m_fortspecific.shoot();
 
+    //发射金球
+    m_gundamspecific.shoot();
+
 
     //计算所有发出子弹的坐标
     for(int i=0;i<BULLET_NUM;i++){
@@ -144,14 +147,28 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
         painter.drawPixmap(m_fortspecific.m_laser_specific.m_X,m_fortspecific.m_laser_specific.m_Y,m_fortspecific.m_laser_specific.m_Laser);
     }
 
+    //绘制金球
+    if(m_gundamspecific.m_goldenball_specific.m_Free==false){
+        painter.drawPixmap(m_gundamspecific.m_goldenball_specific.m_X,m_gundamspecific.m_goldenball_specific.m_Y,m_gundamspecific.m_goldenball_specific.m_goldenball);
+    }
+
 
     //绘制炮台
     if(m_fortspecific.m_Free==false)
-    painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);
+        painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);
 
     //绘制炮台（反）
     if(m_fortreversespecific.m_Free==false)
-    painter.drawPixmap(m_fortreversespecific.m_X,m_fortreversespecific.m_Y,m_fortreversespecific.m_fort_reverse);
+        painter.drawPixmap(m_fortreversespecific.m_X,m_fortreversespecific.m_Y,m_fortreversespecific.m_fort_reverse);
+
+    //绘制高达（下）
+    if(m_gundamspecific.m_Free==false)
+        painter.drawPixmap(m_gundamspecific.m_X,m_gundamspecific.m_Y,m_gundamspecific.m_gundam);
+
+    //绘制高达（上）
+    if(m_gundam_reversespecific.m_Free==false)
+        painter.drawPixmap(m_gundam_reversespecific.m_X,m_gundam_reversespecific.m_Y,m_gundam_reversespecific.m_gundam_reverse);
+
 
     //绘制英雄守护者
     for(int i=0;i<GUARDIAN_NUM;i++){
@@ -159,7 +176,6 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
             painter.drawPixmap(m_guardians[i].m_X,m_guardians[i].m_Y,m_guardians[i].m_guardian);
         }
     }
-
 
 
     //绘制爆炸

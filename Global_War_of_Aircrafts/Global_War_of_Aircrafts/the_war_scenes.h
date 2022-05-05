@@ -11,6 +11,9 @@
 #include"fort.h"
 #include"fort_reverse.h"
 #include"laser.h"
+#include"gundam.h"
+#include"gundam_reverse.h"
+#include"golden_ball.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }
@@ -66,6 +69,11 @@ public:
     //炮台对象（反）
     fort_reverse m_fortreversespecific;
 
+    //高达对象（下）
+    Gundam m_gundamspecific;
+
+    //高达对象（上）
+    Gundam_reverse m_gundam_reversespecific;
 
     //定时器
     QTimer m_Timer;

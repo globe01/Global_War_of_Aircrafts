@@ -29,9 +29,21 @@
 //炮台（反）       （上）
 #define FORTREVERSE_PATH ":/scene/resources/Fort(1)(1)(1).png"
 
+//高达（下）
+#define GUNDAM_PATH ":/scene/resources/Gundam(1)(1).png"
+
+//高达（上）
+#define GUNDAMREVERSE_PATH ":/scene/resources/Gundam(1).png"
+
 //激光
 #define LASER_PATH ":/scene/resources/Laser(1).png"
 #define LASER_SPEED 10
+
+
+//光球
+#define GOLDEN_PATH ":/scene/resources/goldenBall(1).png"
+#define GOLDEN_SPEEDX 32
+#define GOLDEN_SPEEDY 10
 
 //子弹
 #define BULLET_PATH ":/scene/resources/bullet(1)(1).png"
