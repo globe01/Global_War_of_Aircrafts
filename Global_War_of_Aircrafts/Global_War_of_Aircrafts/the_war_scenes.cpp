@@ -380,6 +380,7 @@ void The_War_Scenes::collisionDetection()
 
         m_hole_specific.m_Free=true;
 
+        m_UFO.m_Victory=false;
         m_UFO.m_life=m_UFO.m_life-1;
 
 
@@ -417,6 +418,7 @@ void The_War_Scenes::collisionDetection()
 
         m_hole_specific.m_Free=true;
 
+        m_UFO.m_Victory=false;
         m_UFO.m_life=m_UFO.m_life-1;
 
 
@@ -443,7 +445,6 @@ void The_War_Scenes::collisionDetection()
 
     //如果UFO_aircrafts和hole洞碰撞
     if(m_hole_specific.m_Rect.intersects(m_UFO.m_Rect)){
-        m_UFO.m_Victory=true;
 
         m_fortspecific.m_Free=true;
         m_fortreversespecific.m_Free=true;
@@ -457,6 +458,7 @@ void The_War_Scenes::collisionDetection()
 
         m_hole_specific.m_Free=true;
 
+        m_UFO.m_Victory=true;
         m_UFO.m_life=m_UFO.m_life-1;
 
 
