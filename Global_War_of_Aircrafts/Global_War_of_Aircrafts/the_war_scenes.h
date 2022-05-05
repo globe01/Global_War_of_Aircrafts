@@ -66,6 +66,7 @@ public:
     //炮台对象（反）
     fort_reverse m_fortreversespecific;
 
+
     //定时器
     QTimer m_Timer;
 

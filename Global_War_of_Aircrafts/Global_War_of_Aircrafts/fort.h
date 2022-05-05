@@ -27,6 +27,8 @@ public:
     //激光对象
     Laser m_laser_specific;
 
+
+
     //空闲状态
     bool m_Free;
 

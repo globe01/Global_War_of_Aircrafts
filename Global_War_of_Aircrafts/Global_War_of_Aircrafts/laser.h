@@ -25,8 +25,11 @@ public:
     //移速
     int m_Speed;
 
-    //是否闲置
+    //方向
     bool m_Direction;
+
+    //是否闲置
+    bool m_Free;
 
     //外围矩形边框,是否击中目标可用边框来检测
     QRect m_Rect;

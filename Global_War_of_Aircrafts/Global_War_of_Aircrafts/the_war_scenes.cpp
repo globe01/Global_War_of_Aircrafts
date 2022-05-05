@@ -140,14 +140,17 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     }
 
     //绘制激光
-    painter.drawPixmap(m_fortspecific.m_laser_specific.m_X,m_fortspecific.m_laser_specific.m_Y,m_fortspecific.m_laser_specific.m_Laser);
-
+    if(m_fortspecific.m_laser_specific.m_Free==false){
+        painter.drawPixmap(m_fortspecific.m_laser_specific.m_X,m_fortspecific.m_laser_specific.m_Y,m_fortspecific.m_laser_specific.m_Laser);
+    }
 
 
     //绘制炮台
+    if(m_fortspecific.m_Free==false)
     painter.drawPixmap(m_fortspecific.m_X,m_fortspecific.m_Y,m_fortspecific.m_fort);
 
-    //绘制炮台
+    //绘制炮台（反）
+    if(m_fortreversespecific.m_Free==false)
     painter.drawPixmap(m_fortreversespecific.m_X,m_fortreversespecific.m_Y,m_fortreversespecific.m_fort_reverse);
 
     //绘制英雄守护者
@@ -256,6 +259,9 @@ void The_War_Scenes::collisionDetection()
             //如果UFO_aircrafts和guardian碰撞,UFO_aircrafts减一点防御
             if(m_guardians[i].m_Rect.intersects(m_UFO.m_Rect)){
                 m_guardians[i].m_Free=true;
+                m_fortspecific.m_laser_specific.m_Free=true;
+                m_fortspecific.m_Free=true;
+                m_fortreversespecific.m_Free=true;
                 m_UFO.m_life=m_UFO.m_life-1;
 
                 //碰撞后播放爆炸2音效
@@ -263,29 +269,49 @@ void The_War_Scenes::collisionDetection()
                     if(m_bombs[k].m_Free){
                         //播放音效2
                         QSound::play(SOUND_BOMB2);
-
                         //播放GAMEOVER音效
                         QSound::play(":/scene/resources/gameover.wav");
-
                         m_bombs[k].m_Free=false;
-
                         //坐标更新
                         m_bombs[k].m_X=m_UFO.m_X;
                         m_bombs[k].m_Y=m_UFO.m_Y;
                         break;
-
                     }
                 }
-
                 //判断如果防御值变为0，则UFO_Aircrafts消失
                 if(m_UFO.m_life<0){
                     m_UFO.m_Free=true;
                 }
-
             }
-
         }
-
     }
+    //如果UFO_aircrafts和laser激光球碰撞,UFO_aircrafts减一点防御
+    if(m_fortspecific.m_laser_specific.m_Rect.intersects(m_UFO.m_Rect)){
+        m_fortspecific.m_Free=true;
+        m_fortreversespecific.m_Free=true;
+        m_fortspecific.m_laser_specific.m_Free=true;
+        m_UFO.m_life=m_UFO.m_life-1;
+
+        //碰撞后播放爆炸2音效
+        for(int k=0;k<BOMB_NUM;k++){
+            if(m_bombs[k].m_Free){
+                //播放音效2
+                QSound::play(SOUND_BOMB2);
+                //播放GAMEOVER音效
+                QSound::play(":/scene/resources/gameover.wav");
+                m_bombs[k].m_Free=false;
+                //坐标更新
+                m_bombs[k].m_X=m_UFO.m_X;
+                m_bombs[k].m_Y=m_UFO.m_Y;
+                break;
+            }
+        }
+        //判断如果防御值变为0，则UFO_Aircrafts消失
+        if(m_UFO.m_life<0){
+            m_UFO.m_Free=true;
+        }
+    }
+
+
 }
 
