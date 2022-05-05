@@ -7,7 +7,7 @@ Hole::Hole()
     m_hole.load(HOLE_PATH);
 
     //初始化坐标
-    m_X=0;
+    m_X=-100;
     m_Y=(GAME_HEIGHT-m_hole.height())*0.5;
 
     //初始化矩形边框

@@ -366,8 +366,82 @@ void The_War_Scenes::collisionDetection()
         }
     }
 
+    //如果UFO_aircrafts和golden_ball金球碰撞,UFO_aircrafts减一点防御
+    if(m_gundamspecific.m_goldenball_specific.m_Rect.intersects(m_UFO.m_Rect)){
+        m_fortspecific.m_Free=true;
+        m_fortreversespecific.m_Free=true;
+        m_fortspecific.m_laser_specific.m_Free=true;
 
-    //如果UFO_aircrafts和hoole洞碰撞,UFO_aircrafts减一点防御
+        m_gundamspecific.m_Free=true;
+        m_gundam_reversespecific.m_Free=true;
+
+        m_gundamspecific.m_goldenball_specific.m_Free=true;
+        m_gundam_reversespecific.m_goldenballreverse_specific.m_Free=true;
+
+        m_hole_specific.m_Free=true;
+
+        m_UFO.m_life=m_UFO.m_life-1;
+
+
+        //碰撞后播放爆炸2音效
+        for(int k=0;k<BOMB_NUM;k++){
+            if(m_bombs[k].m_Free){
+                //播放音效2
+                QSound::play(SOUND_BOMB2);
+                //播放GAMEOVER音效
+                QSound::play(":/scene/resources/gameover.wav");
+                m_bombs[k].m_Free=false;
+                //坐标更新
+                m_bombs[k].m_X=m_UFO.m_X;
+                m_bombs[k].m_Y=m_UFO.m_Y;
+                break;
+            }
+        }
+        //判断如果防御值变为0，则UFO_Aircrafts消失
+        if(m_UFO.m_life<0){
+            m_UFO.m_Free=true;
+        }
+    }
+
+    //如果UFO_aircrafts和golden_ball_reverse金球碰撞,UFO_aircrafts减一点防御
+    if(m_gundam_reversespecific.m_goldenballreverse_specific.m_Rect.intersects(m_UFO.m_Rect)){
+        m_fortspecific.m_Free=true;
+        m_fortreversespecific.m_Free=true;
+        m_fortspecific.m_laser_specific.m_Free=true;
+
+        m_gundamspecific.m_Free=true;
+        m_gundam_reversespecific.m_Free=true;
+
+        m_gundamspecific.m_goldenball_specific.m_Free=true;
+        m_gundam_reversespecific.m_goldenballreverse_specific.m_Free=true;
+
+        m_hole_specific.m_Free=true;
+
+        m_UFO.m_life=m_UFO.m_life-1;
+
+
+        //碰撞后播放爆炸2音效
+        for(int k=0;k<BOMB_NUM;k++){
+            if(m_bombs[k].m_Free){
+                //播放音效2
+                QSound::play(SOUND_BOMB2);
+                //播放GAMEOVER音效
+                QSound::play(":/scene/resources/gameover.wav");
+                m_bombs[k].m_Free=false;
+                //坐标更新
+                m_bombs[k].m_X=m_UFO.m_X;
+                m_bombs[k].m_Y=m_UFO.m_Y;
+                break;
+            }
+        }
+        //判断如果防御值变为0，则UFO_Aircrafts消失
+        if(m_UFO.m_life<0){
+            m_UFO.m_Free=true;
+        }
+    }
+
+
+    //如果UFO_aircrafts和hole洞碰撞
     if(m_hole_specific.m_Rect.intersects(m_UFO.m_Rect)){
         m_UFO.m_Victory=true;
 
