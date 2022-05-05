@@ -51,6 +51,9 @@
 #define BULLET_NUM 50   //总数
 #define BULLET_INTERVAL 20  //时间间隔
 
+//洞
+#define HOLE_PATH ":/scene/resources/hole(1).png"
+
 //英雄守护者1
 #define GUARDIAN_PATH ":/scene/resources/guardian-1.png"
 #define GUARDIAN_SPEED 3

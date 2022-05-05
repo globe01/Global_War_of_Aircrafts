@@ -26,6 +26,7 @@ SOURCES += \
     gundam.cpp \
     gundam_reverse.cpp \
     heroguardians.cpp \
+    hole.cpp \
     laser.cpp \
     main.cpp \
     the_war_scenes.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
     gundam.h \
     gundam_reverse.h \
     heroguardians.h \
+    hole.h \
     laser.h \
     the_war_scenes.h \
     ufo_aircraft.h \

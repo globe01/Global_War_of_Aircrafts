@@ -122,8 +122,18 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     painter.drawPixmap(m_warmap.m_map1_posX,0,m_warmap.m_map1);
     painter.drawPixmap(m_warmap.m_map2_posX,0,m_warmap.m_map2);
     //如果飞行器炸毁，绘制游戏结束
-    if(m_UFO.m_Free==true){
+    if(m_UFO.m_Free==true && m_UFO.m_Victory==false){
         painter.drawPixmap(m_warmap.m_map3_posX,0,m_warmap.m_map3);
+        //所有守护者变为空闲
+        for(int i=0;i<GUARDIAN_NUM;i++){
+            m_guardians[i].m_Free=true;
+        }
+
+    }
+
+    //如果飞行器成功穿越洞，则绘制游戏胜利
+    if(m_UFO.m_Victory==true){
+        painter.drawPixmap(m_warmap.m_map4_posX,0,m_warmap.m_map4);
         //所有守护者变为空闲
         for(int i=0;i<GUARDIAN_NUM;i++){
             m_guardians[i].m_Free=true;
@@ -174,6 +184,10 @@ void The_War_Scenes::paintEvent(QPaintEvent *)
     if(m_gundam_reversespecific.m_Free==false)
         painter.drawPixmap(m_gundam_reversespecific.m_X,m_gundam_reversespecific.m_Y,m_gundam_reversespecific.m_gundam_reverse);
 
+    //绘制洞
+    if(m_hole_specific.m_Free==false){
+        painter.drawPixmap(m_hole_specific.m_X,m_hole_specific.m_Y,m_hole_specific.m_hole);
+    }
 
     //绘制英雄守护者
     for(int i=0;i<GUARDIAN_NUM;i++){
@@ -280,9 +294,18 @@ void The_War_Scenes::collisionDetection()
             //如果UFO_aircrafts和guardian碰撞,UFO_aircrafts减一点防御
             if(m_guardians[i].m_Rect.intersects(m_UFO.m_Rect)){
                 m_guardians[i].m_Free=true;
+
                 m_fortspecific.m_laser_specific.m_Free=true;
                 m_fortspecific.m_Free=true;
                 m_fortreversespecific.m_Free=true;
+
+                m_gundamspecific.m_Free=true;
+                m_gundam_reversespecific.m_Free=true;
+
+                m_gundamspecific.m_goldenball_specific.m_Free=true;
+                m_gundam_reversespecific.m_goldenballreverse_specific.m_Free=true;
+
+                m_hole_specific.m_Free=true;
                 m_UFO.m_life=m_UFO.m_life-1;
 
                 //碰撞后播放爆炸2音效
@@ -311,7 +334,17 @@ void The_War_Scenes::collisionDetection()
         m_fortspecific.m_Free=true;
         m_fortreversespecific.m_Free=true;
         m_fortspecific.m_laser_specific.m_Free=true;
+
+        m_gundamspecific.m_Free=true;
+        m_gundam_reversespecific.m_Free=true;
+
+        m_gundamspecific.m_goldenball_specific.m_Free=true;
+        m_gundam_reversespecific.m_goldenballreverse_specific.m_Free=true;
+
+        m_hole_specific.m_Free=true;
+
         m_UFO.m_life=m_UFO.m_life-1;
+
 
         //碰撞后播放爆炸2音效
         for(int k=0;k<BOMB_NUM;k++){
@@ -333,6 +366,33 @@ void The_War_Scenes::collisionDetection()
         }
     }
 
+
+    //如果UFO_aircrafts和hoole洞碰撞,UFO_aircrafts减一点防御
+    if(m_hole_specific.m_Rect.intersects(m_UFO.m_Rect)){
+        m_UFO.m_Victory=true;
+
+        m_fortspecific.m_Free=true;
+        m_fortreversespecific.m_Free=true;
+        m_fortspecific.m_laser_specific.m_Free=true;
+
+        m_gundamspecific.m_Free=true;
+        m_gundam_reversespecific.m_Free=true;
+
+        m_gundamspecific.m_goldenball_specific.m_Free=true;
+        m_gundam_reversespecific.m_goldenballreverse_specific.m_Free=true;
+
+        m_hole_specific.m_Free=true;
+
+        m_UFO.m_life=m_UFO.m_life-1;
+
+
+
+
+        //判断如果防御值变为0，则UFO_Aircrafts消失
+        if(m_UFO.m_life<0){
+            m_UFO.m_Free=true;
+        }
+    }
 
 }
 

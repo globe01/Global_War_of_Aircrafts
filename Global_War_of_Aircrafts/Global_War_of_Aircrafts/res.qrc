@@ -29,5 +29,8 @@
         <file>resources/Gundam(1)(1).png</file>
         <file>resources/Gundam(1).png</file>
         <file>resources/goldenBall(1).png</file>
+        <file>resources/hole(1).png</file>
+        <file>resources/victory.wav</file>
+        <file>resources/victory_background(1).jpg</file>
     </qresource>
 </RCC>

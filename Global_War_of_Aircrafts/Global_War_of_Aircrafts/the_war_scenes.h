@@ -14,6 +14,8 @@
 #include"gundam.h"
 #include"gundam_reverse.h"
 #include"golden_ball.h"
+#include"golden_ball_reverse.h"
+#include"hole.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class The_War_Scenes; }
@@ -74,6 +76,9 @@ public:
 
     //高达对象（上）
     Gundam_reverse m_gundam_reversespecific;
+
+    //洞对象
+    Hole m_hole_specific;
 
     //定时器
     QTimer m_Timer;

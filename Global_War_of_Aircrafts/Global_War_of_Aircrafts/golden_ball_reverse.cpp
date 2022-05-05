@@ -52,7 +52,7 @@ void Golden_ball_reverse::updatePosition()
             m_Direction=false; //改成第2路径
         }
 
-        if(m_X<=0 ){
+        if(m_X<=275 ){
             m_Direction=true;  //改成第1路径
         }
 

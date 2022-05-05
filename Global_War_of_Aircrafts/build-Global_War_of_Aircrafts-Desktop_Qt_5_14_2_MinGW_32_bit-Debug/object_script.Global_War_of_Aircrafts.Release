@@ -8,6 +8,7 @@ release/golden_ball_reverse.o
 release/gundam.o
 release/gundam_reverse.o
 release/heroguardians.o
+release/hole.o
 release/laser.o
 release/main.o
 release/the_war_scenes.o

@@ -22,6 +22,8 @@ UFO_aircraft::UFO_aircraft()
     //空闲状态
     m_Free=false;
 
+    m_Victory=false;
+
 }
 
 

@@ -38,6 +38,8 @@ public:
     //空闲状态
     bool m_Free;
 
+    bool m_Victory;
+
 };
 
 #endif // UFO_AIRCRAFT_H

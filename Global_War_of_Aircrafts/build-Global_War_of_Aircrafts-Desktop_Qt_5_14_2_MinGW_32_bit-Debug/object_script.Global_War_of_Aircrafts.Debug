@@ -8,6 +8,7 @@ debug/golden_ball_reverse.o
 debug/gundam.o
 debug/gundam_reverse.o
 debug/heroguardians.o
+debug/hole.o
 debug/laser.o
 debug/main.o
 debug/the_war_scenes.o

@@ -7,7 +7,7 @@ Golden_ball::Golden_ball()
 
     //金球坐标
     m_X=550;
-    m_Y=GAME_HEIGHT-238;
+    m_Y=GAME_HEIGHT-400;
 
     //金球方向
     m_Direction= true;  //默认
@@ -51,7 +51,7 @@ void Golden_ball::updatePosition()
             m_Direction=false; //改成第2路径
         }
 
-        if(m_X<=0 ){
+        if(m_X<=275 ){
             m_Direction=true;  //改成第1路径
         }
 
