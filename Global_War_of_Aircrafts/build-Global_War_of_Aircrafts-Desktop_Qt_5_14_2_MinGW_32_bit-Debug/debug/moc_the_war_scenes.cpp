@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../Global_War_of_Aircrafts/the_war_scenes.h"
+#include "../../../Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/the_war_scenes.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
