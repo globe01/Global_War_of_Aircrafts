@@ -19,7 +19,6 @@ Gundam::Gundam()
     //空闲状态
     m_Free=false;
 
-
 }
 
 void Gundam::shoot()

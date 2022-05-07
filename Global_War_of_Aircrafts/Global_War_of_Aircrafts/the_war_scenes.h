@@ -45,9 +45,6 @@ public:
     //鼠标移动事件
     void mouseMoveEvent(QMouseEvent *);
 
-    //键盘事件
-    void keyPressEvent(QKeyEvent *event);
-
 
     //英雄守护者出场
     void guardianToScene();

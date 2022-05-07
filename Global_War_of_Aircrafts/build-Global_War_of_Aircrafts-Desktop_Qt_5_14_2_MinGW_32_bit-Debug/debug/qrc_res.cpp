@@ -6,100 +6,100 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-  // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/sunxingzhe(1).png
+  // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/sunxingzhe(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/Fort(1)(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/Fort(1)(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/gameover.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/gameover.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/Laser(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/Laser(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/hole(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/hole(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/restart_nanie.PNG
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/restart_nanie.PNG
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/background(1).jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/background(1).jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/Fort(1)(1)(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/Fort(1)(1)(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/victory.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/victory.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/victory_background(1).jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/victory_background(1).jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/background2(1).jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/background2(1).jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/goldenBall(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/goldenBall(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/2(1).jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/2(1).jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb1.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb1.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/Gundam(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/Gundam(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb2.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb2.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/Gundam(1)(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/Gundam(1)(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/ren(1)(1)(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/ren(1)(1)(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bgm1.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bgm1.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bgm2.wav
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bgm2.wav
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/guardian-1.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/guardian-1.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-1.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-1.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-2.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-2.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bullet(1)(1).png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bullet(1)(1).png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/guardian-2.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/guardian-2.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-3.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-3.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/sunxingzhe(1).jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/sunxingzhe(1).jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-4.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-4.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-5.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-5.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-6.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-6.png
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/background.jpg
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/background.jpg
   
   
-    // D:/QTprojects/Global_War_of_Aircrafts_inGalaxy/Global_War_of_Aircrafts/resources/bomb-7.png
+    // D:/QTprojects/Global_War_of_Aircrafts/Global_War_of_Aircrafts/resources/bomb-7.png
   
   
   

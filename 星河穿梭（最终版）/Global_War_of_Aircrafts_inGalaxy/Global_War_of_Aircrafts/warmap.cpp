@@ -36,6 +36,4 @@ void WarMap::mapPosition()
     {
         m_map2_posX=0;
     }
-
-
 }

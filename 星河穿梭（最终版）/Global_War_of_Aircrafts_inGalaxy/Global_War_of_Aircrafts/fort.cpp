@@ -20,19 +20,15 @@ Fort::Fort()
     m_Free=false;
 
 }
-
 void Fort::shoot()
 {
     if(m_Free==true){
         return;
-
     }
     else{
         //发射
         m_laser_specific.updatePosition();
     }
-
-
 }
 
 

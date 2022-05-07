@@ -80,7 +80,7 @@ void The_War_Scenes::updateEveryPosition()
     m_warmap.mapPosition();
 
     //发射子弹
-    //m_UFO.shoot();
+    m_UFO.shoot();
 
     //发射激光
     m_fortspecific.shoot();
@@ -230,13 +230,6 @@ void The_War_Scenes::mouseMoveEvent(QMouseEvent *event)
 
 
     m_UFO.setPosition(x,y);
-}
-
-void The_War_Scenes::keyPressEvent(QKeyEvent *event)
-{
-    if(event->key()==Qt::Key_Space){
-       m_UFO.shoot();
-    }
 }
 
 void The_War_Scenes::guardianToScene()
@@ -467,6 +460,8 @@ void The_War_Scenes::collisionDetection()
 
         m_UFO.m_Victory=true;
         m_UFO.m_life=m_UFO.m_life-1;
+
+
 
 
         //判断如果防御值变为0，则UFO_Aircrafts消失

@@ -37,16 +37,16 @@ void UFO_aircraft::setPosition(int x, int y)
 void UFO_aircraft::shoot()
 {
 
-//    //累加时间间隔
-//    m_recorder++;
+    //累加时间间隔
+    m_recorder++;
 
-//    //记录数字未达到发射子弹时间间隔，不发射
-//   if( m_recorder<BULLET_INTERVAL){
-//       return;
-//   }
+    //记录数字未达到发射子弹时间间隔，不发射
+   if( m_recorder<BULLET_INTERVAL){
+       return;
+   }
 
-//   //达到发射时间
-//   m_recorder=0;
+   //达到发射时间
+   m_recorder=0;
    //发射
    for(int i=0;i<BULLET_NUM;i++){
        //若为闲置子弹则发射

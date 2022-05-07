@@ -4,7 +4,7 @@
 //游戏
 #define GAME_WIDTH  1648    //宽度
 #define GAME_HEIGHT  1027    //高度
-#define GAME_TITLE "Global War of Crafts"   //标题
+#define GAME_TITLE "星河穿梭"   //标题
 #define GAME_ICON ":/scene/resources/restart_nanie.PNG" //图标加载路径
 #define GAME_RATE 10 //定时器刷新时间间隔10ms
 
@@ -57,8 +57,8 @@
 //英雄守护者1
 #define GUARDIAN_PATH ":/scene/resources/guardian-1.png"
 #define GUARDIAN_SPEED 3
-#define GUARDIAN_NUM 10     //总数
-#define GUARDIAN_INTERVAL 100    //时间间隔
+#define GUARDIAN_NUM 25     //总数
+#define GUARDIAN_INTERVAL 50    //时间间隔
 
 
 //爆炸
