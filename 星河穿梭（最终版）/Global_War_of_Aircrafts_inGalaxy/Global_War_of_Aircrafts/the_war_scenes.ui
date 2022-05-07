@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>The_War_Scenes</class>
+ <widget class="QWidget" name="The_War_Scenes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>The_War_Scenes</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

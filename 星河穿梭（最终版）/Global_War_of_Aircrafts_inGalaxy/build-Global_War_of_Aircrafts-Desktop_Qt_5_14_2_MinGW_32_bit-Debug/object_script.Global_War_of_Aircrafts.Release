@@ -1,0 +1,17 @@
+release/qrc_res.o
+release/bomb.o
+release/bullet.o
+release/fort.o
+release/fort_reverse.o
+release/golden_ball.o
+release/golden_ball_reverse.o
+release/gundam.o
+release/gundam_reverse.o
+release/heroguardians.o
+release/hole.o
+release/laser.o
+release/main.o
+release/the_war_scenes.o
+release/ufo_aircraft.o
+release/warmap.o
+release/moc_the_war_scenes.o
